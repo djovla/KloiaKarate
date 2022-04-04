@@ -14,7 +14,8 @@ Scenario: Post Request using file
   And driver.fullscreen()
   And input('input[name=q]', 'karate dsl')
   * delay(5000)
-  
-  #When submit().click('input[name=btnI]')
-  #Then match driver.url == 'https://github.com/intuit/karate'
+  When submit().click('input[name=btnI]')
+  Then match driver.url == 'https://github.com/intuit/karate'
+  #the folowing is for a new test
+  #will be add
  
